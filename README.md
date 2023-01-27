@@ -98,4 +98,6 @@ The entire application is run in Spring Tools Suite.
 												 
 •	We are able to login to the employee portal but unable to display specific details mapped to specific employee
 
-•	In order to view the same, we can go to the browser and in the search bar type:localhost:8081/ashwin/emplogin/getemppersonal/42421(Keep replacing 42421 with specific employee id
+•	In order to view the same, we can go to the browser and in the search bar type:
+											
+						 localhost:8081/ashwin/emplogin/getemppersonal/42421(Keep replacing 42421 with specific employee id)

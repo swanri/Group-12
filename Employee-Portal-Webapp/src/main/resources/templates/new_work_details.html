@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Mini Ultimatix</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Mini Ultimatix</h1>
+		<hr>
+	
+
+		<form action="#" th:action="@{/workdetails/saveWorkDetails}" th:object="${workdetails}"
+			method="POST">
+			<input type="text" th:field="*{empid}"
+				placeholder="Employee ID " class="form-control mb-4 col-4">
+				<br>
+				<input type="text" th:field="*{qualification}"
+				placeholder="Employee's' Qualification" class="form-control mb-4 col-4">
+				<br>
+				<input type="text" th:field="*{workexperience}"
+				placeholder="Employee's Work Experience" class="form-control mb-4 col-4">
+				<br>
+				<input type="text" th:field="*{officelocation}"
+				placeholder="Employee's Office Location" class="form-control mb-4 col-4">
+				<br>
+				<button type="submit" class="btn btn-info col-2"> Save Work Details</button>
+		</form>
+		
+		<hr>
+		
+		<a th:href = "@{/workdetails/viewForm}"> Back to Work Details List</a>
+	</div>
+</body>
+</html>
